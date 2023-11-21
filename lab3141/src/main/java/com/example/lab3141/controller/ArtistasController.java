@@ -28,7 +28,7 @@ public class ArtistasController extends HttpServlet{
 
             case "lista":
                 request.setAttribute("listasArtistas", artistasDao.listaArtistas());
-                view = request.getRequestDispatcher("artistas/lista.jsp");
+                view = request.getRequestDispatcher("../lista.jsp");
                 view.forward(request, response);
                 break;
             case "editar":
